@@ -1,0 +1,337 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color : #0dcaf0;
+}
+
+
+/* Start Navbar */
+.navbar {
+    background-color: white;
+    
+}
+
+.navbar-nav .nav-link {
+    transition: all .5s;
+    padding: 10px;
+    margin-right: 10px;
+}
+.navbar-nav .nav-item .special::before {
+    content: "";
+    background-color: var(--main-color);
+    position: absolute;
+    width: 1px;
+    height: 50%;
+    left: -10px;
+    top: 15%;
+    margin: 5px;
+
+}
+.navbar .navbar-brand span,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+.navbar-nav .btn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+.navbar-nav .btn:active,
+.landing .btn:active {
+    background-color: var(--main-color);
+    color: white;
+}
+.navbar-toggler {
+    color: var(--main-color);
+    box-shadow: none !important;
+    outline: none !important;
+    border: 1px solid black;
+}
+.navbar-toggler[aria-expanded="true"] {
+    border-color: var(--main-color);
+}
+/* Start Navbar */
+
+/* Start Landing */
+.landing {
+    background-image: linear-gradient(rgba(0,0,0,.4) ,rgba(0,0,0,.4)),url(../imgs/hero_2.jpg.webp);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.landing .btn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    box-shadow: none;
+    width: 160px;
+}
+
+.landing .container input,
+.landing .container select {
+    border: none;
+    box-shadow: none;
+}
+
+/* End Landing */
+
+/* Start Numbers */
+.numbers {
+    z-index: 222;
+    position: relative;
+    top: -60px;
+}
+.numbers .container  {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .4);
+    border-radius: 10px;
+    background-color: white;
+}
+.numbers .container .row svg {
+    color: var(--main-color);
+    font-size: 34px;
+}
+.numbers .container .row span {
+    width: 70px;
+    padding: 3px;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 20px;
+}
+.numbers .container .row .item { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.numbers .container .row .item:hover {
+    background-color: var(--main-color);
+
+}
+.numbers .container .row .item:hover svg {
+    color: white;
+}
+.numbers .container .row .item:hover span {
+    background-color: #049bb9;;
+}
+
+/* End Numbers */
+
+
+
+
+/* Start Features */
+.featurs {
+    margin: 30px 0px;
+}
+.featurs .container .card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.featurs .container .card .icon,
+.trend .container .icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+.container .heart {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.5s;
+    background-color: rgba(221, 221, 221, 0.3);
+}
+.container .heart svg {
+    font-size: 14px;
+    color: var(--main-color);
+}
+.container .heart:hover {
+    background-color: rgb(216, 59, 59);
+}
+.container .heart:hover svg {
+    color: #fff;
+}
+/* End Features */
+
+
+/* Start Products */
+.content {
+    margin-bottom: 30px;
+    position: relative;
+}
+.product {
+    margin: 50px 0;
+}
+.product .row .card {
+    overflow: hidden;
+}
+.product .row .card .card-img {
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.product .content h3 {
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.product .heading p {
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+.product .content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 40px);
+    height: 2px;
+    width: 80px;
+    background-color: var(--main-color);
+}
+.product .row .card .card-img .layer {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.product .row .card .card-img:hover {
+    transform: scale(1.03, 1.03);
+}
+.product .row .card .sub-tit {
+    padding: 7px;
+    color: #fff;
+    font-size: 0.7em;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: var(--main-color);
+}
+/* End Products */
+
+
+/* Start Training */
+.training {
+    background-color: #f6f6f6;
+    padding: 30px 0;
+}
+.training .container h4 {
+    color: var(--main-color);
+    position: relative;
+    margin-bottom: 30px;
+}
+.training .container h4::before
+{
+    position: absolute;
+    content: "";
+    background-color: var(--main-color);
+    width: 80px;
+    height: 2px;
+    left: 30px;
+    bottom: -10px;
+}
+.training .row .image img {
+    width: 200px;
+}
+.training .row .box {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+/* ENd Training */
+
+/* Start News */
+.news {
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+}
+.news input {
+    font-style: italic;
+    background: none;
+    border-bottom: 1px solid #fff !important;
+}
+.news input:focus {
+    background: none;
+    box-shadow: none!important;
+}
+.news button[type="submit"] {
+    border-radius: 0;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.news button[type="submit"]:hover {
+    color: #fff;
+    background-color: #000;
+}
+/* End News */
+
+/* Start Footer */
+footer {
+    padding: 50px 0px;
+}
+footer input {
+    color: #fff !important;
+    box-shadow: none !important;
+}
+footer input:focus {
+    box-shadow: none !important;
+}
+footer .input-group input::placeholder,
+.news input::placeholder {
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+}
+.logos a svg {
+    color: #fff;
+    opacity: 0.5;
+}
+footer a:hover,
+.logos a svg {
+    opacity: 0.75;
+}
+.logos a {
+    padding: 7px;
+    text-decoration: none;
+}
+/* End Footer */
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 991px) {
+    .navbar-nav .nav-item .special::before {
+        display: none;
+    }
+    .navbar-nav .btn {
+        width: 125px;
+    }
+}
