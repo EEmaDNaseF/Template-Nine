@@ -318,6 +318,105 @@ footer a:hover,
 /* End Footer */
 
 
+/* Start Testimonial */
+.testimonial{
+    padding: 30px 0;
+    
+}
+.testimonial h2{
+    color: var(--main-color);
+    position: relative;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.testimonial h2::before{
+    background-color: var(--main-color);
+    content: "";
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: calc(50% - 30px);
+    
+}
+.testimonial .container .carousel-inner img {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+}
+.testimonial .container .carousel-inner h3 {
+    width: 75%;
+    margin: auto;
+    font-size: 1.3em;
+    font-style: italic;
+    margin: 20px auto;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: var(--main-color);
+}
+
+/* End Testimonial */
+
+/* Start Blog */
+.blog {
+    padding: 30px 0;
+    background-color: #f6f6f6;
+}
+.blog h2{
+    color: var(--main-color);
+    position: relative;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.blog h2::before{
+    background-color: var(--main-color);
+    content: "";
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: calc(50% - 30px);
+    
+}
+.blog .container .card h5 a {
+    text-decoration: none;
+    
+}
+.blog .container .card p a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+.blog .container .btn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    box-shadow: none;
+    width: 160px;
+}
+.blog .container .btn:active {
+    background-color: var(--main-color);
+    color: white;
+}
+/* End Blog */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
